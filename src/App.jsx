@@ -24,7 +24,8 @@ const App = () => {
   return (
     <div>
       <h1>Pizza 2025</h1>
-      <Pizza name="Margarita" description="Tomato Basil" />
+      <Pizza name="Margarita"  description="Tomato Basil" />
+       <Pizza name="Marinara"  description="Tomato" />
     </div>
   )
 };

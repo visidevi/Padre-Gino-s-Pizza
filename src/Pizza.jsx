@@ -7,9 +7,10 @@
 
 const Pizza  = (props) => {
     return (
-        <div class="pizza">
+        <div className="pizza">
             <h1>{props.name}</h1>
             <p>{props.description}</p>
+            <image src={props.image} alt={props.name}/>
         </div>
     )
 }
