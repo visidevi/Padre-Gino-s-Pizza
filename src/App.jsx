@@ -1,4 +1,4 @@
-import React from "react";
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 // import Pizza from "./Pizza";
 import Order from "./Order";
@@ -23,12 +23,14 @@ const App = () => {
   //   }),
   // ]);
   return (
-    <div>
-      <h1>Pizza 2025</h1>
-      {/* <Pizza name="Margarita"  description="Tomato Basil" />
+    <StrictMode>
+      <div>
+        <h1>Pizza 2025</h1>
+        {/* <Pizza name="Margarita"  description="Tomato Basil" />
        <Pizza name="Marinara"  description="Tomato" /> */}
-      <Order />
-    </div>
+        <Order />
+      </div>
+    </StrictMode>
   );
 };
 
