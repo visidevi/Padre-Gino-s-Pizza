@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 // import Pizza from "./Pizza";
 import Order from "./Order";
+import PizzaOfTheDay from "./PizzaOfTheDay";
 // const Pizza = (props) => {
 //   return React.createElement("div", {}, [
 //     React.createElement("h1", {}, props?.name),
@@ -29,6 +30,7 @@ const App = () => {
         {/* <Pizza name="Margarita"  description="Tomato Basil" />
        <Pizza name="Marinara"  description="Tomato" /> */}
         <Order />
+        <PizzaOfTheDay />
       </div>
     </StrictMode>
   );
