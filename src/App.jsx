@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import Pizza from "./Pizza";
+// import Pizza from "./Pizza";
+import Order from "./Order";
 // const Pizza = (props) => {
 //   return React.createElement("div", {}, [
 //     React.createElement("h1", {}, props?.name),
@@ -24,10 +25,11 @@ const App = () => {
   return (
     <div>
       <h1>Pizza 2025</h1>
-      <Pizza name="Margarita"  description="Tomato Basil" />
-       <Pizza name="Marinara"  description="Tomato" />
+      {/* <Pizza name="Margarita"  description="Tomato Basil" />
+       <Pizza name="Marinara"  description="Tomato" /> */}
+      <Order />
     </div>
-  )
+  );
 };
 
 const container = document.getElementById("root");
