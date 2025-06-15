@@ -1,4 +1,4 @@
-import { useExchange } from "./useExchange";
+import { useCurrency } from "./useCurrency";
 export default function Cart({ cart, checkout }) {
   let total = 0;
   for (let i = 0; i < cart.length; i++) {
@@ -17,7 +17,7 @@ export default function Cart({ cart, checkout }) {
           </li>
         ))}
       </ul>
-      <p>Total: {useExchange().format(total)}</p>
+      <p>Total: {useCurrency(total)}</p>
       <button onClick={checkout}>Checkout</button>
     </div>
   );
