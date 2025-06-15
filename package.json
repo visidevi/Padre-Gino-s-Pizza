@@ -16,6 +16,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
+    "@tanstack/eslint-plugin-query": "^5.78.0",
+    "@tanstack/react-query-devtools": "^5.80.7",
     "@tanstack/router-devtools": "^1.121.12",
     "@tanstack/router-plugin": "^1.121.13",
     "@vitejs/plugin-react": "^4.5.2",
@@ -29,6 +31,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.80.7",
     "@tanstack/react-router": "^1.121.12",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"

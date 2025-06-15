@@ -15,10 +15,10 @@
 // }
 import { useState } from "react";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
+import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import PizzaOfTheDay from "../PizzaOfTheDay";
 import Header from "../Headers";
-import Order from "./order.lazy";
 import { CartContext } from "../contexts";
 
 export const Route = createRootRoute({
@@ -29,11 +29,12 @@ export const Route = createRootRoute({
         <CartContext value={cartHook}>
           <div>
             <Header />
-            <Order />
+            <Outlet />
             <PizzaOfTheDay />
           </div>
         </CartContext>
         <TanStackRouterDevtools />
+        <ReactQueryDevtools />
       </>
     );
   },
