@@ -1,8 +1,8 @@
 import { useState, useEffect, useContext } from "react";
-import { useExchange } from "./useExchange";
-import { CartContext } from "./contexts";
-import Cart from "./Cart";
-import Pizza from "./Pizza";
+import { useExchange } from "../useExchange";
+import { CartContext } from "../contexts";
+import Cart from "../Cart";
+import Pizza from "../Pizza";
 
 export default function Order() {
   const [pizzaTypes, setPizzaTypes] = useState([]);
