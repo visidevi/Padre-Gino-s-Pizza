@@ -5,16 +5,16 @@ import Order from "./Order";
 import PizzaOfTheDay from "./PizzaOfTheDay";
 import { CartContext } from "./contexts";
 const App = () => {
-  const cartHook = useState();
+  const cartHook = useState([]);
   return (
     <StrictMode>
-      <CartContext.Provider value={cartHook}>
+      <CartContext value={cartHook}>
         <div>
           <Header />
           <Order />
           <PizzaOfTheDay />
         </div>
-      </CartContext.Provider>
+      </CartContext>
     </StrictMode>
   );
 };

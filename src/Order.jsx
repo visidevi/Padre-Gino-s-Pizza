@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useExchange } from "./useExchange";
+import { CartContext } from "./contexts";
 import Cart from "./Cart";
-
 import Pizza from "./Pizza";
 
 export default function Order() {
@@ -9,7 +9,7 @@ export default function Order() {
   const [pizzaType, setPizzaType] = useState("pepperoni");
   const [pizzaSize, setPizzaSize] = useState("M");
   const [loading, setLoading] = useState(true);
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useContext(CartContext);
 
   const checkout = async () => {
     setLoading(true);
