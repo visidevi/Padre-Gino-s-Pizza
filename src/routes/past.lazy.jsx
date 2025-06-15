@@ -22,6 +22,7 @@ function ErrorBoundaryWrappedPastOrderRoutes() {
 }
 
 function PastOrdersRoute() {
+  //   throw new Error("omg lol");
   const [page, setPage] = useState(1);
 
   const { isLoading, data } = useQuery({
