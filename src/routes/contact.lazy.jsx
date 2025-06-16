@@ -11,7 +11,6 @@ function ContactRoute() {
     mutationFn: function (e) {
       e.preventDefault();
       const formData = new FormData(e.target);
-      console.log(formData);
       return postContact(
         formData.get("name"),
         formData.get("email"),
@@ -19,6 +18,15 @@ function ContactRoute() {
       );
     },
   });
+
+  if (mutation.isError) {
+    return (
+      <div className="contact">
+        <h2>Contact</h2>
+        <h3>Error: {mutation.error.message}</h3>
+      </div>
+    );
+  }
 
   return (
     <div className="contact">
