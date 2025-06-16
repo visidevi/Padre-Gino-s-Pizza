@@ -10,6 +10,7 @@ export default defineConfig({
           name: "happy-dom",
           environment: "happy-dom",
           coverage: {
+            // provider: "istanbul",
             reporters: ["text", "json", "html"],
           },
         },
@@ -20,6 +21,10 @@ export default defineConfig({
           setupFiles: ["vitest-browser-react"],
           include: ["**/*.browser.test.{js,jsx}"],
           name: "browser",
+          coverage: {
+            // provider: "istanbul",
+            reporters: ["text", "json", "html"],
+          },
           browser: {
             enabled: true,
             provider: "playwright",

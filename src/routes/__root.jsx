@@ -18,7 +18,7 @@ import { Outlet, createRootRoute } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import PizzaOfTheDay from "../PizzaOfTheDay";
-import Header from "../Headers";
+import Header from "../Header";
 import { CartContext } from "../contexts";
 
 export const Route = createRootRoute({
