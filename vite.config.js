@@ -18,5 +18,8 @@ export default defineConfig({
   plugins: [tanstackRouter(), react()],
   test: {
     environment: "happy-dom",
+    coverage: {
+      reporters: ["text", "json", "html"],
+    },
   },
 });

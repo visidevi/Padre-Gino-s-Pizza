@@ -12,7 +12,9 @@
     "format": "prettier --write \"src/**/*.{js,jsx,css,html}\"",
     "lint": "eslint",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "coverage": "vitest --coverage",
+    "test:ui": "vitest --ui"
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
@@ -22,6 +24,8 @@
     "@tanstack/router-plugin": "^1.121.13",
     "@testing-library/react": "^16.3.0",
     "@vitejs/plugin-react": "^4.5.2",
+    "@vitest/coverage-v8": "^3.2.3",
+    "@vitest/ui": "^3.2.3",
     "eslint": "^9.28.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-react": "^7.37.5",
