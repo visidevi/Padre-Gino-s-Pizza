@@ -86,7 +86,6 @@ function PastOrdersRoute({ loadedPromise, page, setPage }) {
           Next
         </button>
       </div>
-      // last thing before closing div
       {focusedOrder ? (
         <Modal>
           <h2>Order #{focusedOrder}</h2>
